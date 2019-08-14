@@ -1,7 +1,7 @@
 <template>
-<div>
+  <div>
     <el-button type="info" @click="loginOut">退出</el-button>
-</div>
+  </div>
 </template>
 <script>
 export default {
@@ -18,4 +18,4 @@ export default {
 }
 </script>
 <style lang="less" scoped>
- </style>
+</style>
