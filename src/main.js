@@ -5,6 +5,8 @@ import router from './router'
 import './plugins/element.js'
 // 导入全局样式
 import './assets/css/base.less'
+// 导入tree-table表格
+import TreeTable from 'vue-table-with-tree-grid'
 // 导入icon图标
 import './assets/fonts/iconfont.css'
 // 导入axios
@@ -18,8 +20,10 @@ axios.interceptors.request.use(config => {
   return config
 })
 // 挂在到vue原型上，使全局实例通过this可以使用axios
-
 Vue.prototype.$http = axios
+// 全局注表格树
+Vue.component('tree-table', TreeTable)
+
 Vue.config.productionTip = false
 
 new Vue({

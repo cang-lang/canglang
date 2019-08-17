@@ -6,6 +6,7 @@ import Welcome from './views/home/welcome'
 import Users from './views/home/users'
 import Right from './views/home/power/rights'
 import Roles from './views/home/power/roles'
+import Categories from './views/home/goods/categories'
 
 Vue.use(Router)
 
@@ -21,7 +22,9 @@ const router = new Router({
         path: '/welcome', component: Welcome
       }, {
         path: '/users', component: Users
-      }, { path: '/rights', component: Right }, { path: '/roles', component: Roles }] }
+      }, { path: '/rights', component: Right }, { path: '/roles', component: Roles }, {
+        path: '/categories', component: Categories
+      }] }
   ]
 })
 // 路由前置守卫
